@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		FAE2870D2201D2AD00842817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2870C2201D2AD00842817 /* AppDelegate.swift */; };
-		FAE2870F2201D2AD00842817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2870E2201D2AD00842817 /* ViewController.swift */; };
-		FAE287122201D2AD00842817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE287102201D2AD00842817 /* Main.storyboard */; };
+		FAE2870F2201D2AD00842817 /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2870E2201D2AD00842817 /* CommentsVC.swift */; };
+		FAE287122201D2AD00842817 /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE287102201D2AD00842817 /* Comments.storyboard */; };
 		FAE287142201D2AD00842817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE287132201D2AD00842817 /* Assets.xcassets */; };
 		FAE287172201D2AD00842817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE287152201D2AD00842817 /* LaunchScreen.storyboard */; };
+		FAE287282201D67D00842817 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE287272201D67D00842817 /* CommentCell.swift */; };
+		FAE2872A2201D7BD00842817 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE287292201D7BD00842817 /* Comment.swift */; };
+		FAE2872D2201D96800842817 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2872C2201D96800842817 /* NetworkService.swift */; };
+		FAE287302201DD3800842817 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2872F2201DD3800842817 /* CommentNetworkService.swift */; };
+		FAE287322201DE2500842817 /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE287312201DE2500842817 /* GetCommentResponse.swift */; };
+		FAE287352201DEB600842817 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE287342201DEB500842817 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAE287092201D2AD00842817 /* MVC-N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-N.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE2870C2201D2AD00842817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAE2870E2201D2AD00842817 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAE287112201D2AD00842817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAE2870E2201D2AD00842817 /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
+		FAE287112201D2AD00842817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Comments.storyboard; sourceTree = "<group>"; };
 		FAE287132201D2AD00842817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAE287162201D2AD00842817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAE287182201D2AD00842817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE287272201D67D00842817 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		FAE287292201D7BD00842817 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		FAE2872C2201D96800842817 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FAE2872F2201DD3800842817 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		FAE287312201DE2500842817 /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
+		FAE287342201DEB500842817 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,116 @@
 		FAE2870B2201D2AD00842817 /* MVC-N */ = {
 			isa = PBXGroup;
 			children = (
-				FAE2870C2201D2AD00842817 /* AppDelegate.swift */,
-				FAE2870E2201D2AD00842817 /* ViewController.swift */,
-				FAE287102201D2AD00842817 /* Main.storyboard */,
-				FAE287132201D2AD00842817 /* Assets.xcassets */,
-				FAE287152201D2AD00842817 /* LaunchScreen.storyboard */,
-				FAE287182201D2AD00842817 /* Info.plist */,
+				FAE2871E2201D32B00842817 /* Application */,
+				FAE2871F2201D33100842817 /* Comments */,
+				FAE287262201D3AF00842817 /* Supporting Files */,
 			);
 			path = "MVC-N";
+			sourceTree = "<group>";
+		};
+		FAE2871E2201D32B00842817 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FAE287252201D34100842817 /* Model */,
+				FAE287242201D33F00842817 /* View */,
+				FAE287232201D33D00842817 /* Controller */,
+				FAE2872B2201D95100842817 /* NetworkService */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FAE2871F2201D33100842817 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				FAE287222201D33B00842817 /* Model */,
+				FAE287212201D33A00842817 /* View */,
+				FAE287202201D33800842817 /* Controller */,
+				FAE2872E2201DD1800842817 /* CommentNetworkService */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		FAE287202201D33800842817 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAE2870E2201D2AD00842817 /* CommentsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAE287212201D33A00842817 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAE287102201D2AD00842817 /* Comments.storyboard */,
+				FAE287272201D67D00842817 /* CommentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAE287222201D33B00842817 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAE287332201DE5400842817 /* Responses */,
+				FAE287292201D7BD00842817 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAE287232201D33D00842817 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAE2870C2201D2AD00842817 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAE287242201D33F00842817 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAE287152201D2AD00842817 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAE287252201D34100842817 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAE287342201DEB500842817 /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAE287262201D3AF00842817 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAE287132201D2AD00842817 /* Assets.xcassets */,
+				FAE287182201D2AD00842817 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAE2872B2201D95100842817 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				FAE2872C2201D96800842817 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		FAE2872E2201DD1800842817 /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				FAE2872F2201DD3800842817 /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
+			sourceTree = "<group>";
+		};
+		FAE287332201DE5400842817 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				FAE287312201DE2500842817 /* GetCommentResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +238,7 @@
 			files = (
 				FAE287172201D2AD00842817 /* LaunchScreen.storyboard in Resources */,
 				FAE287142201D2AD00842817 /* Assets.xcassets in Resources */,
-				FAE287122201D2AD00842817 /* Main.storyboard in Resources */,
+				FAE287122201D2AD00842817 /* Comments.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,20 +249,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE2870F2201D2AD00842817 /* ViewController.swift in Sources */,
+				FAE2872D2201D96800842817 /* NetworkService.swift in Sources */,
+				FAE287352201DEB600842817 /* NetworkError.swift in Sources */,
+				FAE2870F2201D2AD00842817 /* CommentsVC.swift in Sources */,
 				FAE2870D2201D2AD00842817 /* AppDelegate.swift in Sources */,
+				FAE287322201DE2500842817 /* GetCommentResponse.swift in Sources */,
+				FAE287282201D67D00842817 /* CommentCell.swift in Sources */,
+				FAE287302201DD3800842817 /* CommentNetworkService.swift in Sources */,
+				FAE2872A2201D7BD00842817 /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FAE287102201D2AD00842817 /* Main.storyboard */ = {
+		FAE287102201D2AD00842817 /* Comments.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FAE287112201D2AD00842817 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Comments.storyboard;
 			sourceTree = "<group>";
 		};
 		FAE287152201D2AD00842817 /* LaunchScreen.storyboard */ = {
@@ -284,7 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WLVQ32562Z;
-				INFOPLIST_FILE = "MVC-N/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVC-N/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WLVQ32562Z;
-				INFOPLIST_FILE = "MVC-N/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVC-N/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
